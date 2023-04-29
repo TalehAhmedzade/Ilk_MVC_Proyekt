@@ -1,0 +1,18 @@
+﻿
+<form asp-controller="Product" asp-action="UpdateProduct">
+    <label>Product Name</label>
+    <input type="hidden" value="@ViewBag.Product.ProductId" name="id" />
+    <input type="text" value="@ViewBag.Product.ProductName" name="name" />
+
+    <label>Product Stock</label>
+    <input type="number" value="@ViewBag.Product.ProductStock" name="stock" />
+
+    <label>Product Price</label>
+    <input type="number" value="@ViewBag.Product.ProductPrice" name="price" />
+
+    <select name="CategoryId">
+       
+    </select>
+
+    <button type="submit">Update</button>
+</form>
